@@ -1,0 +1,809 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(43, 43, 43);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: #1a1e1f;
+  height: 80px;
+  width: 100%;
+  transition: background-color 0.1s ease, opacity 0.1s ease;
+}
+
+label.logo {
+  height: auto;
+  color: white;
+  font-size: 20px;
+  line-height: 80px;
+  font-weight: bold;
+  margin-left: 24.3%;
+}
+label.logo img {
+  margin-top: 20px;
+}
+nav ul {
+  float: right;
+  margin-right: 22%;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  padding-right: 40px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 15px;
+}
+
+.tbc-usaid {
+  color: #40a2d8;
+}
+a:hover {
+  color: #40a2d8;
+  transition: 0.5s;
+}
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.image-text {
+  position: absolute;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  top: 30%;
+  left: 450px;
+  text-align: left;
+}
+.second {
+  margin-top: 20px;
+  font-size: 33px;
+}
+
+.description {
+  background-color: rgb(43, 43, 43);
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+  margin-top: 2%;
+  padding-left: 5.5%;
+  text-align: left;
+}
+.h1 {
+  font-weight: lighter;
+  font-size: 35px;
+}
+.moreh2 {
+  margin-top: 70px;
+}
+.more {
+  color: #40a2d8;
+  margin-top: 70px;
+}
+
+.more:hover {
+  color: grey;
+}
+
+.courses {
+  font-weight: 100;
+  width: 92.7rem;
+  font-size: 25px;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 24.2%;
+  color: white;
+  width: 100%;
+  background-color: rgba(22, 22, 22, 255);
+  margin-top: 40px;
+}
+
+.course-container {
+  display: grid;
+  grid-template-rows: repeat(3);
+  grid-template-columns: repeat(3, 3fr);
+  width: 61rem;
+  margin: 0 auto;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+section {
+  background-color: rgba(22, 22, 22, 255);
+}
+
+.course-text {
+  padding-left: 1.25rem;
+  color: white;
+  font-weight: bold;
+}
+
+.registration {
+  padding-left: 1.25rem;
+  color: white;
+}
+.course-details {
+  display: flex;
+  flex-direction: column;
+  color: #40a2d8;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  padding-bottom: 1.25rem;
+  font-weight: bold;
+}
+
+.course-details:hover {
+  transition: 0.5s;
+  color: #4e89ae;
+}
+
+.course.list {
+  list-style: none;
+  border: 0.2px solid rgba(85, 85, 85, 255);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 41.6rem;
+  width: 30rem;
+}
+.course-list p {
+  margin-top: 30px;
+}
+.information {
+  margin-bottom: 5%;
+  border: #565953 0.1px solid;
+  border-radius: 5px;
+}
+
+.btn {
+  font-size: 15px;
+  margin-top: 5rem;
+  display: flex;
+  gap: 1rem;
+  border: none;
+  background: none;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.course-list img {
+  border-radius: 5px 5px 0px 0px;
+}
+.slides img {
+  width: 100%;
+  height: 100%;
+  gap: 6rem;
+}
+.slider {
+  background-color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.slider h1 {
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  padding-right: 37%;
+  padding-top: 2rem;
+}
+.slider-container {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  overflow: hidden;
+  position: relative;
+  height: 10.5rem;
+}
+.usaid {
+  max-width: 246px;
+  max-height: 74px;
+}
+.spaceint {
+  max-width: 241px;
+  max-height: 80px;
+}
+.tineti {
+  max-width: 250px;
+  max-height: 45px;
+}
+.tegeta {
+  max-width: 248px;
+  max-height: 71px;
+}
+.spectre {
+  max-width: 187px;
+  max-height: 64px;
+}
+.tbc {
+  max-width: 312px;
+  max-height: 92px;
+}
+.ufc {
+  max-width: 227px;
+  max-height: 64px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  max-height: 224px;
+}
+.slide {
+  box-sizing: border-box;
+  display: flex;
+  gap: 6rem;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.slides.fade-out {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+.slides.fade-in {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+.slides.fade {
+  visibility: visible;
+  opacity: 1;
+}
+.slider-container button {
+  position: absolute;
+  transform: translateY(-150%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#prev {
+  left: 10px;
+  padding-left: 50px;
+}
+
+#next {
+  right: 10px;
+  padding-right: 50px;
+}
+.second-arrow {
+  transform: rotate(180deg);
+}
+.dot {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 4px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.section5 {
+  background-color: #161616;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 70px;
+  width: 100%;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 930px;
+  padding-top: 90px;
+}
+.title h2 {
+  margin-left: 25px;
+  font-size: 25px;
+  color: white;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+.title a {
+  font-size: 22px;
+  color: #40a2d8;
+  text-decoration: none;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.title a:hover {
+  color: grey;
+}
+
+.faq {
+  margin-left: 50px;
+  width: 930px;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(44, 48, 40);
+  cursor: pointer;
+}
+.faq.active img {
+  transform: rotate(180deg);
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h3 {
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.answer p {
+  padding-top: 5px;
+  line-height: 28px;
+  font-size: 16px;
+  padding-bottom: 40px;
+}
+
+.faq.active .answer {
+  max-height: 1000px;
+}
+.answer {
+  color: white;
+}
+.answer .steps {
+  margin-left: 30px;
+  padding-top: 10px;
+}
+.section6 {
+  background-color: #1b1e1f;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.footer {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-1 h3 {
+  color: white;
+  font-size: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: lighter;
+}
+.footer-1 a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+}
+em {
+  font-size: 10px;
+}
+.footer-2 img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 50px;
+}
+.facebook {
+  margin-left: 70px;
+}
+.youtube {
+  margin-left: 5px;
+}
+.footer-2 button {
+  width: 162px;
+  height: 40px;
+  color: white;
+  background-color: #48a1db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.footer-2 button:hover {
+  background-color: #b2ccd9;
+  color: #1b1e1f;
+  transition: color 0.7s ease 0s;
+}
+
+.rules:hover {
+  color: #abaca9;
+}
+
+@media screen and (max-width: 1500px) {
+  .slide {
+    gap: 5rem;
+  }
+  .image-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  label.logo {
+    margin-left: 5%;
+  }
+  .image-text {
+    left: 15%;
+  }
+}
+@media screen and (max-width: 1055px) {
+  nav ul {
+    margin-right: 5%;
+  }
+  .image-text {
+    left: 5%;
+  }
+}
+@media screen and (max-width: 100%) {
+  .image-text {
+    left: 0%;
+    font-size: 30px;
+  }
+  .second {
+    font-size: 20px;
+  }
+  .description {
+    padding-left: 0%;
+  }
+  label.logo {
+    margin-left: 0%;
+  }
+  nav ul {
+    margin-right: 0%;
+  }
+  .h1 {
+    font-size: 20px;
+  }
+  .courses {
+    padding-left: 0%;
+  }
+  #risk {
+    padding-right: 0px;
+  }
+  .course-container {
+    grid-template-rows: repeat(2);
+    grid-template-columns: repeat(2, 301px);
+  }
+  .faq {
+    width: 600px;
+    margin-left: 0px;
+  }
+  .title {
+    width: 600px;
+  }
+  .title h2 {
+    margin-left: 0;
+  }
+  .slider-container {
+    padding-left: 2%;
+  }
+
+  .threedots {
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 714px) {
+  nav ul li {
+    padding-right: 4px;
+  }
+  nav ul li a {
+    font-size: 7px;
+  }
+  .image-text {
+    font-size: 18px;
+  }
+  .second {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .h1 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .moreh2 {
+    margin-top: 20px;
+  }
+  .course-container {
+    grid-template-rows: repeat(9);
+    grid-template-columns: repeat(1, 300px);
+    margin-left: 32px;
+  }
+  .faq {
+    width: 375px;
+  }
+  .question h3 {
+    font-size: 13px;
+  }
+  .answer p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .title {
+    width: 375px;
+  }
+  .title h2 {
+    font-size: 15px;
+  }
+  .title a {
+    font-size: 13px;
+  }
+  .footer-1 h3 {
+    font-size: 10px;
+  }
+  em {
+    font-size: 7px;
+  }
+  .footer-1 a {
+    font-size: 10px;
+  }
+  .usaid {
+    max-width: 32px;
+    max-height: 18px;
+  }
+  .spaceint {
+    max-width: 60px;
+    max-height: 20px;
+  }
+  .tineti {
+    max-width: 62px;
+    max-height: 11px;
+  }
+  .tegeta {
+    max-width: 62px;
+    max-height: 17px;
+  }
+  .spectre {
+    max-width: 47px;
+    max-height: 16px;
+  }
+  .tbc {
+    max-width: 78px;
+    max-height: 23px;
+  }
+  .ufc {
+    max-width: 66px;
+    max-height: 16px;
+  }
+  .slider button img {
+    margin-bottom: -20px;
+  }
+}
+@media screen and (max-width: 635px) {
+  nav ul li {
+    padding-right: 4px;
+  }
+  nav ul li a {
+    font-size: 7px;
+  }
+  .image-text {
+    font-size: 18px;
+  }
+  .second {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .h1 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .moreh2 {
+    margin-top: 20px;
+  }
+  .course-container {
+    grid-template-rows: repeat(9);
+    grid-template-columns: repeat(1, 300px);
+    margin-left: 32px;
+  }
+  .faq {
+    width: 375px;
+  }
+  .question h3 {
+    font-size: 13px;
+  }
+  .answer p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .title {
+    width: 375px;
+  }
+  .title h2 {
+    font-size: 15px;
+  }
+  .title a {
+    font-size: 13px;
+  }
+  .footer-1 h3 {
+    font-size: 10px;
+  }
+  em {
+    font-size: 7px;
+  }
+  .footer-1 a {
+    font-size: 10px;
+  }
+  .usaid {
+    max-width: 32px;
+    max-height: 18px;
+  }
+  .spaceint {
+    max-width: 60px;
+    max-height: 20px;
+  }
+  .tineti {
+    max-width: 62px;
+    max-height: 11px;
+  }
+  .tegeta {
+    max-width: 62px;
+    max-height: 17px;
+  }
+  .spectre {
+    max-width: 47px;
+    max-height: 16px;
+  }
+  .tbc {
+    max-width: 78px;
+    max-height: 23px;
+  }
+  .ufc {
+    max-width: 66px;
+    max-height: 16px;
+  }
+  .slider button img {
+    margin-bottom: -20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .usaid {
+    max-width: 141px;
+    max-height: 12px;
+  }
+  .spaceint {
+    max-width: 40px;
+    max-height: 13px;
+  }
+  .tineti {
+    max-width: 41px;
+    max-height: 7px;
+  }
+  .tegeta {
+    max-width: 41px;
+    max-height: 12px;
+  }
+  .spectre {
+    max-width: 31px;
+    max-height: 10px;
+  }
+  .tbc {
+    max-width: 52px;
+    max-height: 15px;
+  }
+  .ufc {
+    max-width: 37px;
+    max-height: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  nav ul li {
+    padding-right: 5px;
+  }
+  nav ul li a {
+    font-size: 6px;
+  }
+  .image-text {
+    font-size: 14px;
+  }
+  .second {
+    font-family: 11px;
+  }
+  .h1 {
+    line-height: 15px;
+    font-size: 12px;
+  }
+  .moreh2 {
+    font-size: 18px;
+  }
+  .faq {
+    width: 300px;
+  }
+  .question h3 {
+    font-size: 11px;
+  }
+  .answer p {
+    font-size: 9px;
+    line-height: 15px;
+  }
+  .title {
+    width: 300px;
+  }
+  .title h2 {
+    font-size: 12px;
+  }
+  .title a {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .usaid {
+    max-width: 123px;
+    max-height: 37px;
+  }
+  .spaceint {
+    max-width: 120px;
+    max-height: 40px;
+  }
+  .tineti {
+    max-width: 125px;
+    max-height: 22px;
+  }
+  .tegeta {
+    max-width: 124px;
+    max-height: 35px;
+  }
+  .spectre {
+    max-width: 93px;
+    max-height: 32px;
+  }
+  .tbc {
+    max-width: 156px;
+    max-height: 46px;
+  }
+  .ufc {
+    max-width: 113px;
+    max-height: 32px;
+  }
+  .slider button img {
+    margin-bottom: -20px;
+  }
+  #prev {
+    left: 2px;
+    padding-left: 2px;
+  }
+
+  #next {
+    right: 2px;
+    padding-right: 2px;
+  }
+}
